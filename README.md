@@ -27,3 +27,8 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+Every time the function runs, it gives back a list of Fibonacci numbers from 0 to n, with the last number = fib(n). This works because the smallest cases (fib(0) -> [0] and fib(1) -> [0,1]) are correct. Every new call just adds the next Fibonacci number to the list. The invariant after the recursive call is that the array prevFib correctly contains the Fibonacci sequence from 0 to n-1. Because this pattern is followed, the final invariant after the recursive call is that at the end of fib(n), prevFib contains Fibonacci numbers from 0 to n, with fib(n) correctly included.
+
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
